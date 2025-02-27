@@ -11,7 +11,7 @@ h1 {
     font-family: Georgia, serif; /* La familia tipográfica utilizada en la cabecera */
 }
 h2{
-    color: #33ff00; /* El color de la cabecera */
+    color:  #b80d0dad; /* El color de la cabecera */
     font-size: 20px; /* El tamaño de la fuente de la cabecera */
     font-family: Georgia, serif; /* La familia tipográfica utilizada en la cabecera */
 }
@@ -20,3 +20,48 @@ button{
     font-size: 20px; /* El tamaño de la fuente de la cabecera */
     font-family: Georgia, serif; /* La familia tipográfica utilizada en la cabecera */
 }
+@keyframes color-change {
+    0% {
+      color: blue;
+    }
+  
+    50% {
+      color: red;
+    }
+  
+    100% {
+      color: blue;
+    }
+}
+
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+h1 {
+    animation: color-change 3s infinite;
+    animation: rotate 4s infinite;
+}
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+
